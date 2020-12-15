@@ -1,0 +1,4 @@
+---
+# See https://witchychant.com/ansible-cumulative-inventory-variables/
+root_authorized_keys: "{{ q('vars', *q('varnames', '^root_authorized_keys_')) | flatten }}"
+root_authorized_keys_all: []
